@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.mceapp.fr",
+      "nativeLanguage": "fr"
+    },
+    "jhipsterVersion": "5.7.0",
+    "applicationType": "monolith",
+    "baseName": "mceapp",
+    "packageName": "com.mceapp.fr",
+    "packageFolder": "com/mceapp/fr",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ODZkY2I5ZGFjNjM1ZGNjMTA1OTcxNTlmN2I1YTc2YWE3NjcwOGQ4Nzg4MzliMmU1YzFmM2QwNmFhZWYzMjFhY2Y0OWQ1MWU5YmEyODlkOGU3NzNlZTllYjE0MzE5Y2FlY2ExMjhiNGVlNDI2MTQyMDQ3NmIzNDE1YmU0ZTAxZTA=",
+    "clientFramework": "angularX",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "fr",
+    "languages": [
+      "fr"
+    ]
+  }
+}
