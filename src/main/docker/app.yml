@@ -1,15 +1,15 @@
 version: '2'
 services:
-    mceapp-app:
-        image: mceapp
+    jhipster-app:
+        image: jhipster
         environment:
             - _JAVA_OPTIONS=-Xmx512m -Xms256m
             - SPRING_PROFILES_ACTIVE=prod,swagger
-            - SPRING_DATASOURCE_URL=jdbc:postgresql://mceapp-postgresql:5432/mceapp
+            - SPRING_DATASOURCE_URL=jdbc:mysql://jhipster-mysql:3306/jhipster?useUnicode=true&characterEncoding=utf8&useSSL=false
             - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
         ports:
             - 8080:8080
-    mceapp-postgresql:
+    jhipster-mysql:
         extends:
-            file: postgresql.yml
-            service: mceapp-postgresql
+            file: mysql.yml
+            service: jhipster-mysql

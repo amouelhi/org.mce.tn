@@ -11,12 +11,12 @@ import { AuthInterceptor } from './blocks/interceptor/auth.interceptor';
 import { AuthExpiredInterceptor } from './blocks/interceptor/auth-expired.interceptor';
 import { ErrorHandlerInterceptor } from './blocks/interceptor/errorhandler.interceptor';
 import { NotificationInterceptor } from './blocks/interceptor/notification.interceptor';
-import { MceappSharedModule } from 'app/shared';
-import { MceappCoreModule } from 'app/core';
-import { MceappAppRoutingModule } from './app-routing.module';
-import { MceappHomeModule } from './home/home.module';
-import { MceappAccountModule } from './account/account.module';
-import { MceappEntityModule } from './entities/entity.module';
+import { JhipsterSharedModule } from 'app/shared';
+import { JhipsterCoreModule } from 'app/core';
+import { JhipsterAppRoutingModule } from './app-routing.module';
+import { JhipsterHomeModule } from './home/home.module';
+import { JhipsterAccountModule } from './account/account.module';
+import { JhipsterEntityModule } from './entities/entity.module';
 import * as moment from 'moment';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
@@ -24,21 +24,21 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
 @NgModule({
     imports: [
         BrowserModule,
-        MceappAppRoutingModule,
+        JhipsterAppRoutingModule,
         Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-' }),
         NgJhipsterModule.forRoot({
             // set below to true to make alerts look like toast
             alertAsToast: false,
             alertTimeout: 5000,
             i18nEnabled: true,
-            defaultI18nLang: 'fr'
+            defaultI18nLang: 'en'
         }),
-        MceappSharedModule.forRoot(),
-        MceappCoreModule,
-        MceappHomeModule,
-        MceappAccountModule,
+        JhipsterSharedModule.forRoot(),
+        JhipsterCoreModule,
+        JhipsterHomeModule,
+        JhipsterAccountModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
-        MceappEntityModule
+        JhipsterEntityModule
     ],
     declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
     providers: [
@@ -65,7 +65,7 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
     ],
     bootstrap: [JhiMainComponent]
 })
-export class MceappAppModule {
+export class JhipsterAppModule {
     constructor(private dpConfig: NgbDatepickerConfig) {
         this.dpConfig.minDate = { year: moment().year() - 100, month: 1, day: 1 };
     }

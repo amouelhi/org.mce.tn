@@ -1,6 +1,6 @@
 {
-  "name": "Mceapp",
-  "short_name": "Mceapp",
+  "name": "Jhipster",
+  "short_name": "Jhipster",
   "icons": [
       {
           "src": "./content/images/hipster192.png",
